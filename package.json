@@ -2,7 +2,7 @@
 {
   "name": "react-native-emoji-keyboard",
   "author": "Brendan Rius",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "description": "A native emoji keyboard for react native",
   "main": "EmojiKeyboard.js",
