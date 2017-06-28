@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>EmojiKeyboard2.xcscheme</key>
+		<key>EmojiKeyboard.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8CAF1A961F041ECE005CB9EE</key>
+		<key>8CDB6D501F04252A00D5C960</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8CAF1A961F041ECE005CB9EE"
-               BuildableName = "EmojiKeyboard.framework"
+               BlueprintIdentifier = "8CDB6D501F04252A00D5C960"
+               BuildableName = "libEmojiKeyboard.a"
                BlueprintName = "EmojiKeyboard"
                ReferencedContainer = "container:EmojiKeyboard.xcodeproj">
             </BuildableReference>
@@ -45,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8CAF1A961F041ECE005CB9EE"
-            BuildableName = "EmojiKeyboard.framework"
+            BlueprintIdentifier = "8CDB6D501F04252A00D5C960"
+            BuildableName = "libEmojiKeyboard.a"
             BlueprintName = "EmojiKeyboard"
             ReferencedContainer = "container:EmojiKeyboard.xcodeproj">
          </BuildableReference>
@@ -63,8 +63,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8CAF1A961F041ECE005CB9EE"
-            BuildableName = "EmojiKeyboard.framework"
+            BlueprintIdentifier = "8CDB6D501F04252A00D5C960"
+            BuildableName = "libEmojiKeyboard.a"
             BlueprintName = "EmojiKeyboard"
             ReferencedContainer = "container:EmojiKeyboard.xcodeproj">
          </BuildableReference>
