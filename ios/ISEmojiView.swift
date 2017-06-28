@@ -33,13 +33,13 @@ fileprivate let collectionMinimumInteritemSpacing = CGFloat(0)
 fileprivate let ISMainBackgroundColor = UIColor(red: 249/255.0, green: 249/255.0, blue: 249/255.0, alpha: 1)
 
 /// A emoji keyboard view
-public class ISEmojiView: UIView, UICollectionViewDataSource, UICollectionViewDelegate {
+@objc public class ISEmojiView: UIView, UICollectionViewDataSource, UICollectionViewDelegate {
   
   /// the delegate for callback
   public weak var delegate: ISEmojiViewDelegate?
   
-  /// long press to pop preview effect like iOS10 system emoji keyboard, Default is true
-  public var isShowPopPreview = true
+  /// long press to pop preview effect like iOS10 system emoji keyboard
+  public var isShowPopPreview = false
   
   private var defaultFrame: CGRect {
     return CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 236)
@@ -74,6 +74,17 @@ public class ISEmojiView: UIView, UICollectionViewDataSource, UICollectionViewDe
   }()
   
   public var emojis: [[String]]!
+  public var showDeleteButton = true {
+    willSet(newShowDeleteButton) {
+      deleteButton.isHidden = !newShowDeleteButton
+    }
+  }
+  
+  public var bgColor = ISMainBackgroundColor {
+    willSet(newColor) {
+      collectionView.backgroundColor = newColor
+    }
+  }
   
   fileprivate let emojiPopView = ISEmojiPopView()
   
@@ -85,6 +96,7 @@ public class ISEmojiView: UIView, UICollectionViewDataSource, UICollectionViewDe
   
   override init(frame: CGRect) {
     super.init(frame: frame)
+    self.frame=frame
     setupUI()
   }
   
@@ -97,8 +109,6 @@ public class ISEmojiView: UIView, UICollectionViewDataSource, UICollectionViewDe
   }
   
   private func setupUI() {
-    frame = defaultFrame
-    
     // Default emojis
     if emojis == nil {
       self.emojis = ISEmojiView.defaultEmojis()
@@ -129,7 +139,6 @@ public class ISEmojiView: UIView, UICollectionViewDataSource, UICollectionViewDe
   }
   
   private func updateControlLayout() {
-    frame = defaultFrame
     
     // update page control
     let pageCount = collectionView.numberOfSections

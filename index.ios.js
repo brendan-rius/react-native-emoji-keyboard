@@ -4,23 +4,29 @@
  * @flow
  */
 
-import React, {Component} from 'react';
+import React from 'react';
 import {
 	AppRegistry,
-	StyleSheet,
+	StyleSheet, Text,
 	View,
-	AlertIOS,
-	requireNativeComponent
 } from 'react-native';
+import EmojiKeyboard from './EmojiKeyboard'
 
-const Emoji = requireNativeComponent('RNEmojiPickerSwift', null)
+export default class emojipicker extends React.PureComponent {
+	constructor(props) {
+		super(props)
+		this.state = {
+			emojis: [],
+		}
+	}
 
-export default class emojipicker extends Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Emoji style={{backgroundColor: 'red', alignItems: 'center', justifyContent: 'center'}}
-				       test={() => AlertIOS.alert('hello')}/>
+				<Text>{this.state.emojis.join('')}</Text>
+				<EmojiKeyboard onEmojiPicked={e => this.setState({emojis: this.state.emojis.concat(e)})}
+				               onEmojiRemoved={e => this.setState({emojis: this.state.emojis.slice(0, -1)})}
+				               showDeleteButton={this.state.emojis.length > 0}/>
 			</View>
 		);
 	}
@@ -29,8 +35,7 @@ export default class emojipicker extends Component {
 const styles = StyleSheet.create({
 	container: {
 		flex           : 1,
-		justifyContent : 'center',
-		alignItems     : 'center',
+		justifyContent : 'space-between',
 		backgroundColor: 'blue',
 	},
 });

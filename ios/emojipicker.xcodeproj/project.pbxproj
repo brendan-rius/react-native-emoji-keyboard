@@ -36,8 +36,8 @@
 		2DCD954D1E0B4F2C00145EB5 /* emojipickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* emojipickerTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		8C2D32531F02D73100C653F8 /* RNEmojiPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D32501F02D73100C653F8 /* RNEmojiPicker.m */; };
-		8C2D32581F02D82D00C653F8 /* RNEmojiPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D32571F02D82D00C653F8 /* RNEmojiPickerManager.swift */; };
+		8C2D32531F02D73100C653F8 /* RNEmojiKeyboardBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D32501F02D73100C653F8 /* RNEmojiKeyboardBridge.m */; };
+		8C2D32581F02D82D00C653F8 /* RNEmojiKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D32571F02D82D00C653F8 /* RNEmojiKeyboardManager.swift */; };
 		8C2D325C1F03A68C00C653F8 /* ISEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D325B1F03A68C00C653F8 /* ISEmojiView.swift */; };
 		8C2D325E1F03A6AE00C653F8 /* ISEmojiList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C2D325D1F03A6AE00C653F8 /* ISEmojiList.plist */; };
 /* End PBXBuildFile section */
@@ -273,9 +273,9 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		8C2D32501F02D73100C653F8 /* RNEmojiPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEmojiPicker.m; sourceTree = "<group>"; };
+		8C2D32501F02D73100C653F8 /* RNEmojiKeyboardBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEmojiKeyboardBridge.m; sourceTree = "<group>"; };
 		8C2D32561F02D82C00C653F8 /* emojipicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "emojipicker-Bridging-Header.h"; sourceTree = "<group>"; };
-		8C2D32571F02D82D00C653F8 /* RNEmojiPickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNEmojiPickerManager.swift; sourceTree = "<group>"; };
+		8C2D32571F02D82D00C653F8 /* RNEmojiKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNEmojiKeyboardManager.swift; sourceTree = "<group>"; };
 		8C2D325B1F03A68C00C653F8 /* ISEmojiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISEmojiView.swift; sourceTree = "<group>"; };
 		8C2D325D1F03A6AE00C653F8 /* ISEmojiList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ISEmojiList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -416,14 +416,14 @@
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
-				8C2D32501F02D73100C653F8 /* RNEmojiPicker.m */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				8C2D32571F02D82D00C653F8 /* RNEmojiPickerManager.swift */,
+				8C2D325D1F03A6AE00C653F8 /* ISEmojiList.plist */,
+				8C2D32501F02D73100C653F8 /* RNEmojiKeyboardBridge.m */,
+				8C2D32571F02D82D00C653F8 /* RNEmojiKeyboardManager.swift */,
 				8C2D32561F02D82C00C653F8 /* emojipicker-Bridging-Header.h */,
 				8C2D325B1F03A68C00C653F8 /* ISEmojiView.swift */,
-				8C2D325D1F03A6AE00C653F8 /* ISEmojiList.plist */,
 			);
 			name = emojipicker;
 			sourceTree = "<group>";
@@ -954,9 +954,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C2D32581F02D82D00C653F8 /* RNEmojiPickerManager.swift in Sources */,
+				8C2D32581F02D82D00C653F8 /* RNEmojiKeyboardManager.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				8C2D32531F02D73100C653F8 /* RNEmojiPicker.m in Sources */,
+				8C2D32531F02D73100C653F8 /* RNEmojiKeyboardBridge.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				8C2D325C1F03A68C00C653F8 /* ISEmojiView.swift in Sources */,
 			);

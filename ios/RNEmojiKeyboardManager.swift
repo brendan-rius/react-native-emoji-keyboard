@@ -10,29 +10,25 @@ import Foundation
 import MapKit
 
 class CustomEmojiView: ISEmojiView {
-  @objc public var test: RCTBubblingEventBlock = { body in
-    print(body ?? "NONE")
-  }
+  var onEmojiPicked: RCTDirectEventBlock!
+  var onEmojiRemoved: RCTDirectEventBlock!
 }
 
 
 extension CustomEmojiView : ISEmojiViewDelegate {
   func emojiViewDidSelectEmoji(emojiView: ISEmojiView, emoji: String) {
-    print(emoji)
-    self.test([
+    self.onEmojiPicked([
       "emoji": emoji
     ])
   }
   
   func emojiViewDidPressDeleteButton(emojiView: ISEmojiView) {
-    print("delete")
-    //self.test()
+    self.onEmojiRemoved(nil)
   }
-  
 }
 
-@objc(RNEmojiPickerSwift)
-class RNEmojiPickerManager : RCTViewManager {
+@objc(RNEmojiKeyboardSwift)
+class RNEmojiKeyboardManager : RCTViewManager {
   @objc override func view() -> UIView! {
     let keyboard = CustomEmojiView()
     keyboard.delegate = keyboard
