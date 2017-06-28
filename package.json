@@ -1,10 +1,10 @@
 {
   "name": "react-native-emoji-keyboard",
   "author": "Brendan Rius",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "description": "A native emoji keyboard for react native",
-  "main": "index.js",
+  "main": "EmojiKeyboard.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/brendan-rius/react-native-emoji-keyboard.git"
