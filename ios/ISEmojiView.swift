@@ -9,7 +9,7 @@
 import Foundation
 
 /// emoji view action callback delegate
-public protocol ISEmojiViewDelegate: class {
+@objc public protocol ISEmojiViewDelegate: class {
   
   /// did press a emoji button
   ///
@@ -74,17 +74,6 @@ fileprivate let ISMainBackgroundColor = UIColor(red: 249/255.0, green: 249/255.0
   }()
   
   public var emojis: [[String]]!
-  public var showDeleteButton = true {
-    willSet(newShowDeleteButton) {
-      deleteButton.isHidden = !newShowDeleteButton
-    }
-  }
-  
-  public var bgColor = ISMainBackgroundColor {
-    willSet(newColor) {
-      collectionView.backgroundColor = newColor
-    }
-  }
   
   fileprivate let emojiPopView = ISEmojiPopView()
   
@@ -234,7 +223,7 @@ fileprivate let ISMainBackgroundColor = UIColor(red: 249/255.0, green: 249/255.0
   //MARK: Tools
   
   static private func pathOfResourceInBundle(filename:String, filetype: String) -> String? {
-    if let filePath = Bundle.main.path(forResource: filename, ofType: filetype) {
+    if let filePath = Bundle(for: self).path(forResource: filename, ofType: filetype) {
       return filePath
     }
     return nil

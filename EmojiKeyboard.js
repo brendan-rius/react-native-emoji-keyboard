@@ -45,4 +45,4 @@ export default class EmojiKeyboard extends React.PureComponent {
 	}
 }
 
-const RCTEmojiKeyboard = requireNativeComponent('RNEmojiKeyboardSwift', EmojiKeyboard)
+const RCTEmojiKeyboard = requireNativeComponent('RNEmojiKeyboard', EmojiKeyboard)

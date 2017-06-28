@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import MapKit
 
 class CustomEmojiView: ISEmojiView {
   var onEmojiPicked: RCTDirectEventBlock!

@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8CDB6DA31F0431FF00D5C960 /* ISEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDB6DA01F0431FF00D5C960 /* ISEmojiView.swift */; };
 		8CDB6DA41F0431FF00D5C960 /* RNEmojiKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDB6DA11F0431FF00D5C960 /* RNEmojiKeyboard.m */; };
-		8CDB6DA51F0431FF00D5C960 /* RNEmojiKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDB6DA21F0431FF00D5C960 /* RNEmojiKeyboardManager.swift */; };
 		8CDB6E141F04358C00D5C960 /* RNEmojiKeyboardFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CDB6E121F04358C00D5C960 /* RNEmojiKeyboardFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CDB6E7D1F04367600D5C960 /* ISEmojiList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CDB6D9F1F0431FF00D5C960 /* ISEmojiList.plist */; };
+		8CDB6E7E1F04367600D5C960 /* ISEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDB6DA01F0431FF00D5C960 /* ISEmojiView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CDB6EEC1F043CA800D5C960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58B511D31A9E6C8500147676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CDB6E0F1F04358C00D5C960;
+			remoteInfo = RNEmojiKeyboardFramework;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
@@ -27,11 +37,9 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNEmojiKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNEmojiKeyboard.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CDB6D9D1F0431FF00D5C960 /* RNEmojiKeyboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNEmojiKeyboard-Bridging-Header.h"; sourceTree = "<group>"; };
 		8CDB6D9F1F0431FF00D5C960 /* ISEmojiList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ISEmojiList.plist; sourceTree = "<group>"; };
 		8CDB6DA01F0431FF00D5C960 /* ISEmojiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISEmojiView.swift; sourceTree = "<group>"; };
 		8CDB6DA11F0431FF00D5C960 /* RNEmojiKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEmojiKeyboard.m; sourceTree = "<group>"; };
-		8CDB6DA21F0431FF00D5C960 /* RNEmojiKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNEmojiKeyboardManager.swift; sourceTree = "<group>"; };
 		8CDB6E101F04358C00D5C960 /* RNEmojiKeyboardFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNEmojiKeyboardFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDB6E121F04358C00D5C960 /* RNEmojiKeyboardFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNEmojiKeyboardFramework.h; sourceTree = "<group>"; };
 		8CDB6E131F04358C00D5C960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,10 +77,8 @@
 				8CDB6D9F1F0431FF00D5C960 /* ISEmojiList.plist */,
 				8CDB6DA01F0431FF00D5C960 /* ISEmojiView.swift */,
 				8CDB6DA11F0431FF00D5C960 /* RNEmojiKeyboard.m */,
-				8CDB6DA21F0431FF00D5C960 /* RNEmojiKeyboardManager.swift */,
 				8CDB6E111F04358C00D5C960 /* RNEmojiKeyboardFramework */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				8CDB6D9D1F0431FF00D5C960 /* RNEmojiKeyboard-Bridging-Header.h */,
 				8CDB6E101F04358C00D5C960 /* RNEmojiKeyboardFramework.framework */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +117,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8CDB6EED1F043CA800D5C960 /* PBXTargetDependency */,
 			);
 			name = RNEmojiKeyboard;
 			productName = RCTDataManager;
@@ -178,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDB6E7D1F04367600D5C960 /* ISEmojiList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,8 +197,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CDB6DA41F0431FF00D5C960 /* RNEmojiKeyboard.m in Sources */,
-				8CDB6DA31F0431FF00D5C960 /* ISEmojiView.swift in Sources */,
-				8CDB6DA51F0431FF00D5C960 /* RNEmojiKeyboardManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,10 +204,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDB6E7E1F04367600D5C960 /* ISEmojiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CDB6EED1F043CA800D5C960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CDB6E0F1F04358C00D5C960 /* RNEmojiKeyboardFramework */;
+			targetProxy = 8CDB6EEC1F043CA800D5C960 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		58B511ED1A9E6C8500147676 /* Debug */ = {
@@ -416,6 +431,7 @@
 				8CDB6E171F04358C00D5C960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
