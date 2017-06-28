@@ -1,0 +1,31 @@
+{
+  "name": "react-native-emoji-keyboard",
+  "author": "Brendan Rius",
+  "version": "0.0.3",
+  "private": false,
+  "description": "A native emoji keyboard for react native",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brendan-rius/react-native-emoji-keyboard.git"
+  },
+  "keywords": [
+    "emoji",
+    "keyboard",
+    "react-native"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brendan-rius/react-native-emoji-keyboard/issues"
+  },
+  "dependencies": {
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.45.1"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.0.0",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12"
+  }
+}

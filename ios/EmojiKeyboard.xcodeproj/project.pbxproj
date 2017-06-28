@@ -1,0 +1,80 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		8CAF1A871F041AA8005CB9EE /* emojipicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "emojipicker-Bridging-Header.h"; sourceTree = "<group>"; };
+		8CAF1A881F041AA8005CB9EE /* ISEmojiList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ISEmojiList.plist; sourceTree = "<group>"; };
+		8CAF1A891F041AA8005CB9EE /* ISEmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISEmojiView.swift; sourceTree = "<group>"; };
+		8CAF1A8A1F041AA8005CB9EE /* RNEmojiKeyboardBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNEmojiKeyboardBridge.m; sourceTree = "<group>"; };
+		8CAF1A8B1F041AA8005CB9EE /* RNEmojiKeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNEmojiKeyboardManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		8C2D33361F04199E00C653F8 = {
+			isa = PBXGroup;
+			children = (
+				8CAF1A871F041AA8005CB9EE /* emojipicker-Bridging-Header.h */,
+				8CAF1A881F041AA8005CB9EE /* ISEmojiList.plist */,
+				8CAF1A891F041AA8005CB9EE /* ISEmojiView.swift */,
+				8CAF1A8A1F041AA8005CB9EE /* RNEmojiKeyboardBridge.m */,
+				8CAF1A8B1F041AA8005CB9EE /* RNEmojiKeyboardManager.swift */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		8C2D33371F04199E00C653F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+			};
+			buildConfigurationList = 8C2D333A1F04199E00C653F8 /* Build configuration list for PBXProject "EmojiKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8C2D33361F04199E00C653F8;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		8C2D333B1F04199E00C653F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		8C2D333C1F04199E00C653F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C2D333A1F04199E00C653F8 /* Build configuration list for PBXProject "EmojiKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C2D333B1F04199E00C653F8 /* Debug */,
+				8C2D333C1F04199E00C653F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C2D33371F04199E00C653F8 /* Project object */;
+}
