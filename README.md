@@ -1,7 +1,9 @@
 # Emojis Keyboard for React Native
 
+![Screenshot](./screenshot.png?raw=true "Screenshot")
+
 Based on [ISEmojiView](https://github.com/isaced/ISEmojiView).
-Only works on iOS.
+Only works on iOS for now. If you want to add an Android version, Pull Requests are welcome.
 
 ## Installation
 
