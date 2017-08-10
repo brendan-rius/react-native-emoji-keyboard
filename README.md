@@ -12,7 +12,6 @@ Only works on iOS.
  * In XCode, go to your build settings and set "Always Embed Swift Standard Libraries" to "YES"
  * Clean the Project (Product -> Clean)
  * Build and run your project
-```
 
 ## Usage
 
