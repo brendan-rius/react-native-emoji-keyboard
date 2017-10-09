@@ -233,7 +233,7 @@ fileprivate let ISMainBackgroundColor = UIColor(red: 249/255.0, green: 249/255.0
     if let filePath = ISEmojiView.pathOfResourceInBundle(filename: "ISEmojiList", filetype: "plist") {
       if let sections = NSDictionary(contentsOfFile: filePath) as? [String:[String]] {
         var emojiList: [[String]] = []
-        for sectionName in ["People","Nature","Objects","Places","Symbols"] {
+        for sectionName in ["People", "Nature", "Food", "Activities", "Objects", "Places", "Symbols", "Flags"] {
           emojiList.append(sections[sectionName]!)
         }
         return emojiList
